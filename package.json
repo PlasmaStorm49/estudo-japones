@@ -1,0 +1,30 @@
+{
+  "name": "estudo-japones",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "App de estudo de japonês. Módulo 1: simulado de gramática do JLPT N4.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "validate": "node scripts/validate-content.ts",
+    "check-readings": "node scripts/check-readings.ts",
+    "blind-review": "node scripts/blind-review.ts",
+    "check": "npm run typecheck && npm run validate && npm run check-readings"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.4",
+    "kuromoji": "0.1.2",
+    "typescript": "5.6.3",
+    "vite": "5.4.11"
+  }
+}
