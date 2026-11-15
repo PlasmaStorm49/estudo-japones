@@ -24,3 +24,15 @@ export const ROUND_1 = [
 export function review(status: Review["status"], ...specific: string[]): Review {
   return { status, checks: [...BASE_CHECKS, ...(status === "revisada" ? ROUND_1 : []), ...specific] };
 }
+
+/** Lote 2 (15/11/2026): mesmo processo, com a revisão independente às cegas feita por agentes separados. */
+export const LOTE_2 = [
+  "Lote 2 (IA): validação estrutural automática sem erros.",
+  "Lote 2 (IA): furigana conferido por analisador morfológico (kuromoji) e divergências revisadas à mão.",
+  "Lote 2 (IA, revisor independente que não escreveu a questão): resolvida às cegas, alternativa por alternativa, e explicação conferida; apontamentos verificados antes de corrigir.",
+  "Pendente: revisão por professor ou falante nativo.",
+];
+
+export function review2(status: Review["status"], ...specific: string[]): Review {
+  return { status, checks: [...BASE_CHECKS, ...(status === "revisada" ? LOTE_2 : []), ...specific] };
+}

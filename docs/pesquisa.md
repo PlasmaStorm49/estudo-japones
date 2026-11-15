@@ -67,6 +67,18 @@ Páginas consultadas e lidas como texto (lista completa em `scripts`/pesquisa lo
 - てある／ておく／てしまう, そうだ（伝聞・様態）, たばかり／ところ, まで／までに, ないで／なくて, 敬語: Langoal e
   日本語教師ネット (páginas citadas em cada regra no app).
 
+## Lote 2 (15/11/2026)
+
+- Cobertura: dos 132 pontos da lista do jlptsensei, o lote 1 cobria 57; o lote 2 acrescentou os 29 mais prováveis de
+  cair. Ficam para depois, entre outros: のは〜だ, って, と言われている, かい, じゃないか, がり, さすが, づらい, ていた.
+- Fundação Japão — [日本語教育通信 「こと」(1)](https://www.jpf.go.jp/j/project/japanese/teach/tsushin/grammar/201112.html):
+  com verbos de percepção, só の; antes de です e em 〜ことができる, só こと.
+- Langoal e 日本語教師ネット: lidas as páginas de らしい, みたいだ／みたいな, ことがある, てくる／ていく, 〜出す,
+  〜始める, なさい, 禁止形, という, 数量＋も, 必要がある, がする, ほど〜ない, くする／にする, は〜が〜は, で（理由）,
+  ［原料］から／［材料］で, 場合.
+- Divergências de nível: 場合 (Langoal N3), おきに, ことがある, という e ほど〜ない (Bunpro N3) — mantidos por estarem no N4
+  do jlptsensei/日本語教師ネット, com aviso na regra.
+
 ## Fontes que não puderam ser usadas
 
 - **Migii (jlpt.migii.net)**: as questões de prática de gramática exigem login. Não foram usadas. Se quiser, dá para

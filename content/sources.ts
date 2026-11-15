@@ -37,6 +37,11 @@ export function lg(slug: string, label: string): Source {
   return { label: `Langoal (em japonês) — ${label}`, url: `https://langoal.com/jlpt/explain-grammar-${slug}.html` };
 }
 
+/** Página de um ponto do Bunpro (o slug é o próprio ponto em japonês). */
+export function bp(slug: string, label: string): Source {
+  return { label: `Bunpro — ${label}`, url: `https://bunpro.jp/grammar_points/${slug}` };
+}
+
 /** Página do 日本語教師ネット (nihongokyoshi-net, texto em japonês). */
 export function nk(path: string, label: string): Source {
   return { label: `日本語教師ネット (em japonês) — ${label}`, url: `https://nihongokyoshi-net.com/${path}/` };

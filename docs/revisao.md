@@ -49,6 +49,24 @@ regras e testou as 125 URLs de fonte. Cada apontamento foi verificado antes de v
 Total: 71/71 acertos às cegas; **7 questões com segunda resposta defensável ou distrator fraco** corrigidas, além de
 explicações. Depois das correções: `npm run check` sem erros; furigana 1.967 trechos, todas as divergências conferidas.
 
+## Registro — lote 2 (15/11/2026)
+
+Novo conteúdo: 29 regras (`points-2.ts`), 30 questões de もんだい1 (051–080), 6 de もんだい2 (014–019) e 1 texto de
+もんだい3 (003), cobrindo pontos do N4 que ainda faltavam (らしい, みたい, に見える, がする, ことがある, ことができる,
+の × こと, という, てくる／ていく, 〜出す, てあげる, てよかった, なさい, な, おきに, 数量＋も, だけで, 必要, 場合,
+かな, くする, さ, ございます, は〜が〜は, から／で作る, で de causa, advérbios, ほど〜ない).
+
+Lições da rodada anterior aplicadas já na autoria: nenhuma alternativa com leitura dupla conhecida (ところ “lugar”,
+ても aditivo, のに positivo, 今度 “desta vez”), nenhum trio de distratores sinônimos. Cada exclusão está anotada no
+`review` da questão.
+
+| Etapa | Resultado |
+|---|---|
+| Pesquisa | 182 páginas de professores (Langoal e 日本語教師ネット) lidas como texto; Fundação Japão (日本語教育通信) para の × こと. Divergências de nível anotadas (場合 = N3 no Langoal; おきに, ことがある, という, ほど〜ない = N3 no Bunpro). |
+| Furigana | 2.996 trechos. **3 erros meus** corrigidos: {泳|おおよ}ぐ (digitação), {八|や}つ → **やっ**つ, 1{人|ひとり} → {1人|ひとり}. Demais divergências conferidas no contexto. |
+| Revisores às cegas | 37/37 acertos. **Corrigidos:** **073** (暖か também é adjetivo な → 暖かに seria correto; trocado por 涼しい); **m2-019** (「さくら」という先生に… era outra ordem válida; peças trocadas); explicações com fato errado em **062** (くれる também vale para o grupo do falante) e **080** (sentido de しか〜ない invertido); várias afirmações absolutas demais (060, 069, 070, 054, 051, 056, 061, 065…). |
+| Revisor das regras | 0 erros de conjugação/furigana; 1 fonte trocada (できる ≠ ことができる); imprecisões corrigidas (の só com percepção **direta** — 聞く “ficar sabendo” pede こと; partícula de quem recebe em てあげる; なかなか + afirmativo = “bastante”; restrições de 場合; uso de exemplo de みたい). Exemplos parecidos demais com as fontes trocados. Fontes secundárias passaram do índice do Bunpro para as páginas específicas. |
+
 ## Limites honestos
 
 - As duas rodadas foram feitas por IA (Claude), com fontes externas; na 2ª, por agentes independentes de quem escreveu. Ela reduz muito o risco de erro, mas
