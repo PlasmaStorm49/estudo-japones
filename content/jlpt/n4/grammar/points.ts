@@ -335,7 +335,7 @@ Com palavra interrogativa ({何回|なんかい}, いくら, どんなに, だ�
       "Verbos: -u → -e + ば: {行|い}く→{行|い}けば, {飲|の}む→{飲|の}めば, {食|た}べる→{食|た}べれば, する→すれば, {来|く}る→{来|く}れば.",
       "Adjetivo い: い → ければ: {安|やす}い→{安|やす}ければ. **Exceção: いい → よければ** (いい vem de よい).",
       "Negativo: ない → なければ: {行|い}かなければ.",
-      "Adjetivo な / substantivo: なら(ば): {静|しず}かなら, {学生|がくせい}なら.",
+      "Adjetivo な / substantivo: なら(ば) ou, mais formal, であれば: {静|しず}かなら／{静|しず}かであれば, {学生|がくせい}なら／{学生|がくせい}であれば (Tae Kim, p. 193).",
     ],
     rule: `“Se X, então Y”: a condição necessária para um resultado. {毎日|まいにち} {練習|れんしゅう}すれば、{上手|じょうず}に なります.
 
@@ -627,6 +627,7 @@ Só なら permite que a ação da segunda parte aconteça **antes** do evento d
     formation: [
       "Verbo (radical da forma ます) + そう: {降|ふ}りそう, {落|お}ちそう.",
       "Adjetivo い sem い + そう: おいしそう, {高|たか}そう. Exceções: いい→よさそう, ない→なさそう.",
+      "Qualquer negativo troca o い final por さ: {来|こ}ない → {来|こ}なさそう, じゃない → じゃなさそう (Tae Kim, p. 365).",
       "Adjetivo な + そう: {元気|げんき}そう, {静|しず}かそう.",
       "Conjuga como adjetivo な: antes de substantivo **そうな** (おいしそうな ケーキ); antes de verbo/adjetivo **そうに** ({楽|たの}しそうに {話|はな}す).",
     ],
@@ -660,6 +661,7 @@ Só なら permite que a ação da segunda parte aconteça **antes** do evento d
     notes: [
       "Com substantivo, ような/ように exigem の (× {日本人|にほんじん}ように). Com みたい, sem の ({日本人|にほんじん}みたいに).",
       "É a mesma lógica dos adjetivos な: 〜な antes de substantivo, 〜に antes de verbo/adjetivo.",
+      "No fim da frase, ようだ também expressa **dedução**: ここには {誰|だれ}も いない ようだ (parece que não há ninguém). Mas para “parece gostoso” (aparência), use おいしそう: “おいしい ようだ” soaria como “aparentemente é gostoso”, o que pode até soar rude (Tae Kim, p. 359–360).",
     ],
     examples: [
       { ja: "{雪|ゆき}の ように {白|しろ}い。", pt: "Branco como a neve." },
@@ -674,7 +676,11 @@ Só なら permite que a ação da segunda parte aconteça **antes** do evento d
     meaning: "deve (com certeza) ~ — expectativa com base em um motivo",
     formation: ["Verbo / adjetivo い (forma simples) + はずだ; adjetivo な + な + はずだ; substantivo + の + はずだ."],
     rule: `Conclusão **lógica**, a partir de um dado: {10年|じゅうねん} {中国|ちゅうごく}に {住|す}んで いたので、{中国語|ちゅうごくご}が {話|はな}せる はずです = como morou dez anos na China, com certeza fala chinês.`,
-    notes: ["Costuma vir com o motivo explícito (〜から／〜ので).", "はずだった = era para ser ~ (mas não foi) (日本語教師ネット)."],
+    notes: [
+      "Costuma vir com o motivo explícito (〜から／〜ので).",
+      "はずだった = era para ser ~ (mas não foi) (日本語教師ネット).",
+      "Também explica algo que se acaba de entender (“não é à toa que ~”): エアコンが {壊|こわ}れて いる。{暑|あつ}い はずだ.",
+    ],
     contrasts: [
       { with: "はずが ない", text: "é impossível que ~." },
       { with: "つもり／{予定|よてい}", text: "intenção/plano de quem fala, não dedução." },
@@ -859,7 +865,7 @@ Só なら permite que a ação da segunda parte aconteça **antes** do evento d
     rule: `“Só ~”, sentindo que é **pouco** ou menos do que se esperava. O verbo fica sempre na negativa, mas o sentido é restritivo: {財布|さいふ}に 500{円|えん}しか ありません = só tenho 500 ienes na carteira.`,
     notes: [
       "しか exige negativa. だけ aceita afirmativa e negativa (500{円|えん}だけ あります; {田中|たなか}さんだけ {来|こ}なかった = só o Tanaka não veio). No mesmo fato, 500{円|えん}しか ありません enfatiza que é pouco.",
-      "しか substitui が/を, mas fica depois de に/で/から: {日曜日|にちようび}にしか {休|やす}めません.",
+      "しか substitui が/を, mas fica depois de に/で/から/まで: {日曜日|にちようび}にしか {休|やす}めません; ここからしか {見|み}えない (Tae Kim, p. 345: しか vem depois de から e まで).",
     ],
     examples: [{ ja: "{昨日|きのう}は 3{時間|じかん}しか {寝|ね}ませんでした。", pt: "Ontem só dormi três horas." }],
     sources: [nk("2019/08/15/jlptn4-grammar-shika", "〜しか（動詞は常に否定）"), JT4Y_LIST, BUNPRO_LIST],
@@ -876,7 +882,10 @@ Só なら permite que a ação da segunda parte aconteça **antes** do evento d
       "Conjuga como verbo do grupo 2: すぎて, すぎた.",
     ],
     rule: `Excesso, geralmente com resultado ruim: この {問題|もんだい}は {簡単|かんたん}すぎて、{練習|れんしゅう}に なりません.`,
-    notes: ["× {簡単|かんたん}なすぎる, × {大|おお}きいすぎる."],
+    notes: [
+      "× {簡単|かんたん}なすぎる, × {大|おお}きいすぎる.",
+      "Com negativo, o い de ない vira さ: {食|た}べなさすぎる (come pouco demais), {自信|じしん}が なさすぎる (Tae Kim, p. 350).",
+    ],
     examples: [{ ja: "ゆうべ {食|た}べすぎて、おなかが {痛|いた}いです。", pt: "Comi demais ontem à noite e estou com dor de barriga." }],
     sources: [nk("2019/05/06/jlptn4-grammar-sugiru", "〜すぎる"), lg("sugimasu", "〜すぎます"), JLPT_OFFICIAL_2012],
   },
@@ -1036,7 +1045,10 @@ Só なら permite que a ação da segunda parte aconteça **antes** do evento d
     level: "N4",
     title: "～ないで（{付帯状況|ふたいじょうきょう}）",
     meaning: "sem fazer ~ (fazer Y sem ter feito X)",
-    formation: ["Verbo (ない) + で: {食|た}べないで. Formal/escrito: 〜ずに."],
+    formation: [
+      "Verbo (ない) + で: {食|た}べないで.",
+      "Formal/escrito: troca ない por ず(に): {食|た}べずに; exceções: する → せず, {来|く}る → {来|こ}ず (Tae Kim, p. 388).",
+    ],
     rule: `A segunda ação acontece **no estado de não ter feito** a primeira: {朝|あさ}ご{飯|はん}を {食|た}べないで {会社|かいしゃ}へ {行|い}きました = fui à empresa sem tomar café da manhã.`,
     notes: ["なくて indica **causa** e vem seguido de sentimento/estado ({会|あ}えなくて さびしい, {見|み}えなくて がっかりした) — Langoal: なくて + 「気持ちの言葉」. Não serve para “sem fazer”."],
     contrasts: [{ with: "なくて", text: "causa de um sentimento: {雨|あめ}が {止|や}まなくて {困|こま}りました." }],
@@ -1106,6 +1118,7 @@ Com afirmativa, なかなか muda de sentido: “bastante, até que bem” (な�
     notes: [
       "Verbos potenciais são não volitivos: combinam com ように (objetivo) e ように なる (mudança).",
       "ある e わかる não têm potencial (× わかれる): わかる já significa “conseguir entender”.",
+      "{見|み}える e {聞|き}こえる (ver/ouvir sem esforço, “ser visível/audível”) são verbos à parte, não o potencial de {見|み}る／{聞|き}く — que é {見|み}られる／{聞|き}ける ({声|こえ}が {聞|き}けた = consegui ouvir a voz de propósito). {聞|き}こえる nunca é “conseguir perguntar” (Tae Kim, p. 178–179).",
       "{見|み}れる／{来|こ}れる (sem ら) são coloquiais; na prova, use {見|み}られる／{来|こ}られる.",
     ],
     examples: [{ ja: "{漢字|かんじ}が {少|すこ}し {読|よ}めるように なりました。", pt: "Passei a conseguir ler um pouco de kanji." }],

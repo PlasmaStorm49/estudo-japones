@@ -22,8 +22,13 @@ type Screen =
   | { name: "grammar" }
   | { name: "flags" };
 
+const LEVEL_ORDER = ["N5", "N4", "N3", "N2", "N1"];
+/** Módulos em ordem de nível (N5 → N1), para o seletor. */
+const SORTED_MODULES = [...MODULES].sort((a, b) => LEVEL_ORDER.indexOf(a.level) - LEVEL_ORDER.indexOf(b.level));
+
 export function App() {
-  const mod: GrammarModule = MODULES[0];
+  const [moduleId, setModuleId] = useState(() => getSettings().moduleId ?? MODULES[0].id);
+  const mod: GrammarModule = MODULES.find((m) => m.id === moduleId) ?? MODULES[0];
   const [screen, setScreen] = useState<Screen>({ name: "home" });
   const [furigana, setFurigana] = useState(getSettings().furigana);
   const points = useMemo(() => new Map(mod.points.map((p) => [p.id, p])), [mod]);
@@ -31,7 +36,15 @@ export function App() {
   function toggleFurigana() {
     const v = !furigana;
     setFurigana(v);
-    saveSettings({ furigana: v });
+    saveSettings({ ...getSettings(), furigana: v });
+  }
+
+  function chooseModule(id: string) {
+    if (id === mod.id) return;
+    setModuleId(id);
+    saveSettings({ ...getSettings(), moduleId: id });
+    // Uma sessão em andamento pertence ao nível anterior: volta para o início.
+    if (screen.name === "quiz" || screen.name === "results") setScreen({ name: "home" });
   }
 
   return (
@@ -41,6 +54,18 @@ export function App() {
           日本語 · Estudo de Japonês
         </button>
         <nav>
+          <div className="level-switch" role="group" aria-label="Nível">
+            {SORTED_MODULES.map((m) => (
+              <button
+                key={m.id}
+                className={m.id === mod.id ? "active" : ""}
+                aria-pressed={m.id === mod.id}
+                onClick={() => chooseModule(m.id)}
+              >
+                {m.level}
+              </button>
+            ))}
+          </div>
           <button className="link" onClick={() => setScreen({ name: "grammar" })}>
             Regras
           </button>
@@ -73,7 +98,7 @@ export function App() {
           />
         )}
         {screen.name === "grammar" && <GrammarList mod={mod} />}
-        {screen.name === "flags" && <Flags mod={mod} />}
+        {screen.name === "flags" && <Flags />}
       </main>
     </div>
   );
@@ -155,9 +180,10 @@ function Home({ mod, start }: { mod: GrammarModule; start: (title: string, items
       <div className="about">
         <h2>Sobre o conteúdo</h2>
         <p>
-          As questões são originais, escritas no formato das provas oficiais de exemplo do JLPT N4 (Japan Foundation / JEES). Cada
+          As questões são originais, escritas no formato das provas oficiais de exemplo do JLPT {mod.level} (Japan Foundation / JEES). Cada
           questão passou por revisão alternativa por alternativa e as regras foram conferidas em mais de uma fonte — a lista de fontes
-          aparece em cada regra. Se algo parecer errado, use “Marcar esta questão para revisão” e anote o motivo.
+          aparece em cada regra, incluindo o livro do Tae Kim (A Guide to Japanese Grammar) quando ele trata do assunto. Se algo
+          parecer errado, use “Marcar esta questão para revisão” e anote o motivo.
         </p>
         <p>
           Atalhos: teclas 1–4 para responder, Enter para avançar.
@@ -297,9 +323,10 @@ function GrammarList({ mod }: { mod: GrammarModule }) {
   );
 }
 
-function Flags({ mod }: { mod: GrammarModule }) {
+function Flags() {
   const [flags, setFlags] = useState(getFlags());
-  const items = allItems(mod);
+  // As marcações valem para todos os níveis.
+  const items = MODULES.flatMap((m) => allItems(m));
   const entries = Object.entries(flags);
   const exportText = JSON.stringify(flags, null, 2);
   return (

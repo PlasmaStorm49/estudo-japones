@@ -4,6 +4,7 @@
  */
 import { MODULES } from "../content/index.ts";
 import type { Explanation, GrammarModule } from "../content/schema.ts";
+import { TAE_KIM } from "../content/taekim.ts";
 
 const errors: string[] = [];
 const warnings: string[] = [];
@@ -143,6 +144,14 @@ function validateModule(mod: GrammarModule) {
 }
 
 for (const m of MODULES) validateModule(m);
+
+// O mapeamento do Tae Kim só pode citar regras que existem em algum módulo.
+const allPointIds = new Set(MODULES.flatMap((m) => m.points.map((p) => p.id)));
+for (const id of Object.keys(TAE_KIM)) if (!allPointIds.has(id)) err(`taekim:${id}`, "id de regra inexistente no mapeamento do Tae Kim");
+for (const m of MODULES) {
+  const withTk = m.points.filter((p) => p.sources.some((s) => s.label.startsWith("Tae Kim"))).length;
+  console.log(`${m.id}: Tae Kim citado em ${withTk} de ${m.points.length} regras.`);
+}
 for (const w of warnings) console.log(w);
 for (const e of errors) console.log(e);
 console.log(errors.length ? `\n${errors.length} erro(s).` : `\nOK — nenhum erro (${warnings.length} aviso(s)).`);

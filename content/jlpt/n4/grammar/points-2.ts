@@ -273,7 +273,11 @@ Liga-se **direto** ao substantivo: {学生|がくせい}らしい (e não “{�
     meaning: "faça ~ (ordem de pais, professores, instruções de prova)",
     formation: ["Verbo (radical da forma ます) + なさい: {食|た}べなさい, {早|はや}く {寝|ね}なさい, しなさい."],
     rule: `Ordem de quem tem **autoridade** sobre o ouvinte (pais → filhos, professor → alunos) ou instrução escrita: {正|ただ}しい ものを {選|えら}びなさい.`,
-    notes: ["Não se usa com superiores nem com desconhecidos.", "Não confunda com なさる (verbo de respeito: “fazer”)."],
+    notes: [
+      "Não se usa com superiores nem com desconhecidos.",
+      "Só existe na afirmativa (× {食|た}べないなさい); para proibir, use 〜ないで ou a forma な (Tae Kim, p. 255).",
+      "Não confunda com なさる (verbo de respeito: “fazer”).",
+    ],
     examples: [
       { ja: "もう {9時|くじ}ですよ。{早|はや}く {寝|ね}なさい。", pt: "Já são nove horas. Vá dormir." },
       { ja: "{手|て}を {洗|あら}って から {食|た}べなさい。", pt: "Lave as mãos antes de comer." },

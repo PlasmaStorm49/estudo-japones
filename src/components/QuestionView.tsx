@@ -254,6 +254,26 @@ export function QuestionView({
             <Rich text={exp.takeaway} className="ja-mixed" />
           </section>
 
+          {(() => {
+            const seen = new Set<string>();
+            const tk = gps
+              .flatMap((p) => p.sources)
+              .filter((s) => s.label.startsWith("Tae Kim") && !seen.has(s.label) && seen.add(s.label));
+            if (!tk.length) return null;
+            return (
+              <section className="study-more">
+                <h3>Para estudar mais — Tae Kim (livro indicado pelo professor)</h3>
+                <ul>
+                  {tk.map((s) => (
+                    <li key={s.label}>
+                      {s.label.replace(/^Tae Kim — A Guide to Japanese Grammar \(livro indicado pelo professor\), /, "")}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            );
+          })()}
+
           {item.kind === "mondai3" && (
             <details className="passage-translation">
               <summary>Tradução do texto inteiro</summary>

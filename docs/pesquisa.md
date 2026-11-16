@@ -1,6 +1,6 @@
-# Pesquisa — JLPT N4, gramática
+# Pesquisa — JLPT N4 e N5, gramática
 
-Registro do que foi pesquisado para montar o módulo 1 (simulado de gramática do N4), em 14/11/2026.
+Registro do que foi pesquisado para montar os simulados de gramática do N4 (desde 14/11/2026) e do N5 (16/11/2026).
 
 ## Formato oficial da prova (fonte: jlpt.jp)
 
@@ -70,7 +70,7 @@ Páginas consultadas e lidas como texto (lista completa em `scripts`/pesquisa lo
 ## Lote 2 (15/11/2026)
 
 - Cobertura: dos 132 pontos da lista do jlptsensei, o lote 1 cobria 57; o lote 2 acrescentou os 29 mais prováveis de
-  cair. Ficam para depois, entre outros: のは〜だ, って, と言われている, かい, じゃないか, がり, さすが, づらい, ていた.
+  cair. Os que ficaram para depois (のは〜だ, って, と言われている, かい, じゃないか, がり, づらい, ていた…) entraram no lote 3.
 - Fundação Japão — [日本語教育通信 「こと」(1)](https://www.jpf.go.jp/j/project/japanese/teach/tsushin/grammar/201112.html):
   com verbos de percepção, só の; antes de です e em 〜ことができる, só こと.
 - Langoal e 日本語教師ネット: lidas as páginas de らしい, みたいだ／みたいな, ことがある, てくる／ていく, 〜出す,
@@ -78,6 +78,43 @@ Páginas consultadas e lidas como texto (lista completa em `scripts`/pesquisa lo
   ［原料］から／［材料］で, 場合.
 - Divergências de nível: 場合 (Langoal N3), おきに, ことがある, という e ほど〜ない (Bunpro N3) — mantidos por estarem no N4
   do jlptsensei/日本語教師ネット, com aviso na regra.
+
+## Livro do Tae Kim (indicado pelo professor, 16/11/2026)
+
+- *A Guide to Japanese Grammar — A Japanese Approach to Learning Japanese Grammar* (Tae Kim), PDF de 497 páginas,
+  licença CC BY-NC-SA; versão on-line em [guidetojapanese.org/learn/grammar](https://guidetojapanese.org/learn/grammar).
+- O texto foi extraído página por página e cada seção usada foi lida antes de ser citada. As citações trazem o nome da
+  seção e as **páginas do PDF**.
+- Pertinência: cobre quase toda a gramática do N5 e boa parte do N4. **Não** trata, entre outros, de ように (objetivo),
+  ために, ところ, 間／間に, までに, おきに, 場合, ごろ, 予定だ e de vários advérbios — nesses pontos não foi citado.
+- Conferência cruzada: nenhuma contradição com as outras fontes nas regras citadas. Detalhes do livro que entraram
+  nas regras: であれば, 来なさそう, なさすぎる, ず／せず／こず, からしか, 見える／聞こえる, ようだ de inferência,
+  o に opcional com 来年 (ênfase), かい (sim/não) × だい (com interrogativo), づらい como variação mais “pesada” de にくい.
+- No app: aparece nas fontes de cada regra e, na explicação de cada questão, numa seção “Para estudar mais — Tae Kim”.
+- Números atuais: citado em 74 de 99 regras do N4 e em 26 de 32 do N5.
+
+## N5 (16/11/2026)
+
+- Formato desde dez/2020 (jlpt.jp): gramática do N5 = **9** de もんだい1 + **4** de もんだい2 + **1** texto de もんだい3
+  (4 lacunas).
+- Modelo: caderno oficial de exemplo N5 de 2018 ([N5G.pdf](https://www.jlpt.jp/samples/sample2018/pdf/N5G.pdf)),
+  resolvido inteiro (21/21 com o gabarito oficial) para calibrar o estilo: frases com espaço entre palavras, muito
+  hiragana, kanji simples com furigana, partículas e formas básicas.
+- Lista: 84 pontos do N5 no JLPT Sensei. Divergências anotadas na regra (`levelNote`): ほうがいい, でしょう, つもり e ので
+  aparecem como N4 no Langoal; ながら é N4 no JLPT Sensei, mas N5 no Langoal e na prova oficial de exemplo;
+  なければならない é N4 no JLPT Sensei (que põe no N5 as variantes なくてはいけない／ないといけない).
+- Segunda fonte em japonês: páginas N5 do Langoal (は…が, 前に, あとで, てから, まだ〜ていません, とき, ませんか,
+  ましょうか, どちら／ほうが, なる, 場所で, 道具で, ないでください, なければなりません, たことがある, たり, ながら,
+  これ／ここ, と思う…), mais 日本語教師ネット para os pontos que o Langoal põe no N4.
+
+## Lote 3 do N4 (16/11/2026)
+
+- 13 regras novas, para pontos da lista N4 do JLPT Sensei que ainda não tinham regra: のは〜だ, じゃないか, かい／だい,
+  がり, 頃／ごろ, と言われている／と聞いた, って, とか〜とか, 予定だ, づらい, ていた, たらいいですか, と思う.
+- Fontes: Bunpro (páginas de づらい, じゃないか, かい, ていた, と言われている, とか〜とか, ごろ, がる), 日本語教師ネット
+  (のは〜だ, って, 予定だ, たらいいですか), Langoal (予定です, つもりです, と思う) e Tae Kim. As páginas individuais do
+  JLPT Sensei voltaram a ser bloqueadas por captcha; foram citadas as páginas da lista, mas o conteúdo foi conferido
+  nas outras fontes.
 
 ## Fontes que não puderam ser usadas
 

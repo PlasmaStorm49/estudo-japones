@@ -67,6 +67,29 @@ Lições da rodada anterior aplicadas já na autoria: nenhuma alternativa com le
 | Revisores às cegas | 37/37 acertos. **Corrigidos:** **073** (暖か também é adjetivo な → 暖かに seria correto; trocado por 涼しい); **m2-019** (「さくら」という先生に… era outra ordem válida; peças trocadas); explicações com fato errado em **062** (くれる também vale para o grupo do falante) e **080** (sentido de しか〜ない invertido); várias afirmações absolutas demais (060, 069, 070, 054, 051, 056, 061, 065…). |
 | Revisor das regras | 0 erros de conjugação/furigana; 1 fonte trocada (できる ≠ ことができる); imprecisões corrigidas (の só com percepção **direta** — 聞く “ficar sabendo” pede こと; partícula de quem recebe em てあげる; なかなか + afirmativo = “bastante”; restrições de 場合; uso de exemplo de みたい). Exemplos parecidos demais com as fontes trocados. Fontes secundárias passaram do índice do Bunpro para as páginas específicas. |
 
+## Registro — N5 (16/11/2026)
+
+Novo módulo: 32 regras (`jlpt/n5/grammar/points.ts`), 52 questões de もんだい1, 9 de もんだい2 e 2 textos de もんだい3
+(8 lacunas), no estilo do caderno oficial de exemplo do N5.
+
+| Etapa | Resultado |
+|---|---|
+| Pesquisa | Lista N5 do JLPT Sensei, páginas N5 do Langoal, caderno oficial 2018 e seções “Basic/Essential Grammar” do Tae Kim. Rótulos de fonte conferidos página a página (ex.: a página “haga” do Langoal trata de うさぎは耳が長い, não de は × が em geral). |
+| Autoria | Cada alternativa errada testada; alternativas que um nativo poderia aceitar ficaram de fora, com anotação no `review` (ex.: から com 降りる, より “a partir de”, とき com 〜たときがある). |
+| Furigana | 17 divergências do analisador, todas leituras corretas (9時 = くじ, 日本 = にほん, {来|き}たり…). |
+| Revisor às cegas | **69/69** acertos, nenhuma questão com segunda resposta. **Corrigidos:** fonte errada em ながら (não está na lista N5 do JLPT Sensei → `levelNote`); `levelNote` em なければならない e ので; explicação da alternativa に em m1-002 (に também marca chegada: ホームに降りる); exceção “ある de evento → で” (学校で試験がある); uso de でしょう para confirmação; 〜ませんか nem sempre é “junto”; afirmações absolutas (“interrogativo nunca com は”, “dia da semana pede に”); exemplos das regras que repetiam frases das questões foram trocados. |
+
+## Registro — lote 3 do N4 (16/11/2026)
+
+Novo conteúdo: 13 regras (`points-3.ts`: のは〜だ, じゃないか, かい／だい, がり, 頃／ごろ, と言われている／と聞いた, って,
+とか〜とか, 予定だ, づらい, ていた, たらいいですか, と思う), 26 questões de もんだい1 (081–106), 5 de もんだい2 (020–024)
+e 1 texto de もんだい3 (004). O Tae Kim entra direto nas fontes das regras novas (11 das 13).
+
+| Etapa | Resultado |
+|---|---|
+| Furigana | 24 + 7 divergências do analisador, todas leituras corretas (窓が{開|あ}く, {一人|ひとり}, {20分|にじゅっぷん}…). |
+| Revisor às cegas | **35/35** acertos, nenhuma questão com segunda resposta; conferiu na web os slugs do JLPT Sensei, as páginas do Bunpro, do Langoal e do 日本語教師ネット. **Corrigidos:** explicação falsa em **m1-099** (〜ておく não exige verbo transitivo; exige ação intencional); **m1-083** (ではありませんか existe — o que falta na alternativa é o か); seção errada do Tae Kim em かい／だい; ぐらい também serve para horário na fala (regra ごろ e m1-087); じゃないか com ん vira suposição (〜んじゃないか); はずだ “não é à toa que” (usado na m1-104) entrou na regra; がり serve para falar de si mesmo; って como tópico; つもり não é só de quem fala; afirmações absolutas suavizadas. **Exemplos das regras que repetiam as frases das questões foram todos trocados.** |
+
 ## Limites honestos
 
 - As duas rodadas foram feitas por IA (Claude), com fontes externas; na 2ª, por agentes independentes de quem escreveu. Ela reduz muito o risco de erro, mas

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "App de estudo de japonês. Módulo 1: simulado de gramática do JLPT N4.",
+  "description": "App de estudo de japonês: simulados de gramática do JLPT N5 e N4.",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

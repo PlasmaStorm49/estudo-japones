@@ -13,11 +13,13 @@ O formato está em [schema.ts](schema.ts).
 - Negrito nas explicações: `**texto**`.
 - No arquivo, a resposta pode ficar sempre na alternativa 0: o app embaralha alternativas e explicações juntas.
 
-## Nova questão de gramática do N4
+## Nova questão de gramática (N4 ou N5)
 
-1. Escolha o arquivo: `jlpt/n4/grammar/mondai1-*.ts`, `mondai2.ts` ou `mondai3.ts`.
-2. Use um id novo e sequencial (ex.: `n4-g-m1-051`).
-3. Associe pelo menos um ponto de `points.ts` (crie a regra se não existir, com duas fontes).
+1. Escolha o arquivo do nível: `jlpt/n4/grammar/` ou `jlpt/n5/grammar/` (`mondai1-*.ts`, `mondai2*.ts`, `mondai3*.ts`).
+2. Use um id novo e sequencial (ex.: `n4-g-m1-107`, `n5-g-m1-053`).
+3. Associe pelo menos um ponto das regras **do mesmo nível** (`points*.ts`; no N5 os ids começam com `n5-`). Crie a
+   regra se não existir, com pelo menos duas fontes; se o Tae Kim tratar do ponto, cite a seção e as páginas do PDF
+   com `tk(...)` (ver [taekim.ts](taekim.ts)).
 4. Explique **cada** alternativa. Na alternativa certa, explique o que a frase pede; nas erradas, por que não servem
    aqui (e, se for útil, onde elas serviriam).
 5. Comece com `review("rascunho")`. Rode `npm run check` e o processo de [docs/revisao.md](../docs/revisao.md);

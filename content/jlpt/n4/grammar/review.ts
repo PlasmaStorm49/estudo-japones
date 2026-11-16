@@ -36,3 +36,15 @@ export const LOTE_2 = [
 export function review2(status: Review["status"], ...specific: string[]): Review {
   return { status, checks: [...BASE_CHECKS, ...(status === "revisada" ? LOTE_2 : []), ...specific] };
 }
+
+/** Lote 3 (16/11/2026): mesmo processo do lote 2. */
+export const LOTE_3 = [
+  "Lote 3 (IA): validação estrutural automática sem erros.",
+  "Lote 3 (IA): furigana conferido por analisador morfológico (kuromoji) e divergências revisadas à mão.",
+  "Lote 3 (IA, revisor independente que não escreveu a questão): resolvida às cegas, alternativa por alternativa, e explicação conferida; apontamentos verificados antes de corrigir.",
+  "Pendente: revisão por professor ou falante nativo.",
+];
+
+export function review3(status: Review["status"], ...specific: string[]): Review {
+  return { status, checks: [...BASE_CHECKS, ...(status === "revisada" ? LOTE_3 : []), ...specific] };
+}

@@ -56,6 +56,8 @@ export function setFlag(id: string, note: string | null) {
 
 export interface Settings {
   furigana: boolean;
+  /** Módulo escolhido por último (ex.: "jlpt-n5-grammar"). */
+  moduleId?: string;
 }
 
 export function getSettings(): Settings {
